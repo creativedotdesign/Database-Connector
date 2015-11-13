@@ -32,14 +32,14 @@ abstract class Connector {
     if ($connection_settings) {
       $settings = $connection_settings;
     } else {
-      throw new \Lambda\Database\Exception('Failed to get settings.');
+      throw new \Lambda\Database\BetterException('Failed to get settings.');
     }
 
     try {
       $mysqli = new mysqli($settings['host'], $settings['username'], $settings['password'], $settings['database']);
       self::$connection = $mysqli;
     } catch (Exception $e) {
-      throw new \Lambda\Database\Exception($e->getMessage());
+      throw new \Lambda\Database\BetterException($e->getMessage());
       self::$connection = false;
     }
   }
