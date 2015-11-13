@@ -1,0 +1,30 @@
+{
+  "name": "lambdacreatives/database-connector",
+  "type": "library",
+  "license": "MIT",
+  "description": "A simple MySql database connector.",
+  "homepage": "https://github.com/lambdacreatives/database-connector",
+  "authors": [
+    {
+      "name": "Daniel Hewes",
+      "email": "daniel@lambdacreatives.com",
+      "homepage": "https://github.com/danimalweb"
+    },
+    {
+      "name": "Jake Gully",
+      "email": "chimpytk@gmail.com",
+      "homepage": "https://github.com/mrchimp"
+    }
+  ],
+  "keywords": [
+    "MySql",
+    "database",
+    "connection"
+  ],
+  "autoload": {
+    "classmap": [
+      "Connector.class.php",
+      "Exception.class.php"
+    ]
+  }
+}
